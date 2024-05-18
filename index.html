@@ -1,68 +1,37 @@
-<!-- use latest html version   render doc -->
 <!DOCTYPE html>
 
-<!-- ROOT ELEMENT, every other element will descend it -->
-<!-- lang is an HTML attribute p provide more info about HTML elements -->
-<!-- lang specifies language of text content in the element -->
 <html lang="en">
-  <!-- HEAD ELEMENT is to put meta-info about webpages to render correctly-->
   <head>
-    <!-- meta ensures the webpage will display special symbols and characters correctly -->
     <meta charset="utf-8" />
-    <!-- title is used to give webpages a human-readable title in the browser tab -->
-    <title>My First Webpage</title>
+    <title>Recipe Homepage</title>
   </head>
-  <!-- BODY ELEMENT is where all the content that will be displayed to users-->
-  <!-- e.g. text, images, lists, links -->
+
   <body>
-    <h1>
-      Headings are displayed larger and bolder than text. There are 6 levels of
-      headings.
-    </h1>
+    <h1>Odin Recipes</h1>
+    <h3>About:</h2>
     <p>
-      paragraph element will add a new line after each paragraph.
-      <strong>strong element highlight important of text</strong>
-      <em> em element emphasizes text</em>
+      This is a page containing recipes taken from
+      <a
+        href="https://www.allrecipes.com/"
+        target="_blank"
+        rel="noopener noreferrer"
+        >allrecipes.com</a
+      >
+      .
     </p>
-    <!-- unordered list with list items, e.g. shopping list -->
+
+    <p>The available recipes can be found in the next section below.</p>
+
+    <p>Click the links to be directed to the recipe page.</p>
+
+    <h3>Recipes available:</h2>
+
     <ul>
-      <li>Item 1</li>
-      <li>Item 2</li>
-      <li>Item 3</li>
+      <li>
+        <a href="recipes/shrimp-scampi-with-linguine.html"
+          >shrimp-scampi-with-linguine</a
+        >
+      </li>
     </ul>
-    <!-- order list with list items, e.g. step by step instructions -->
-    <ol>
-      <li>Item 1</li>
-      <li>Item 2</li>
-      <li>Item 3</li>
-    </ol>
-
-    <!-- anchor element is used to create links in html -->
-    <!-- href turns text into links -->
-    <!-- use target to open link in new window -->
-    <!-- rel is used to prevent the opened link from knowing which webpage it came from, and disallow access -->
-    <!-- absolute link: other website on the internet -->
-    <a
-      href="https://www.theodinproject.com/about"
-      target="_blank"
-      rel="noopener noreferrer"
-      >About The Odin Project</a
-    >
-    <!-- relative link: links to other pages in our website -->
-    <a href="./about.html">About</a>
-
-    <!-- link images, img is self-closing tag -->
-    <!-- alt is displayed when image does not load -->
-    <!-- good practice to specify height and width of image -->
-    <img
-      src="https://www.theodinproject.com/mstile-310x310.png"
-      alt="The Odin Project Logo"
-      height="310"
-      width="310"
-    />
   </body>
 </html>
-
-<!-- enter ! on the first line to generate boilerplate -->
-<!-- validate html code using w3 html validator -->
-<!-- all html formatting is found in w3 schools-->
